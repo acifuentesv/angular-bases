@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'AngularBases';
+  
+  name:string = "Fernando";
+
+  welcome() {
+    // alert("Hola "+this.name+", como estas?");
+    alert(`Hola ${this.name} como estas?`)
+  }
+
 }
