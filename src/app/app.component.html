@@ -1,5 +1,9 @@
 <!-- data binding -->
 <h2>Hola mi nombre es {{name}}</h2> 
-<button (click)="welcome()" > Hola </button>
-
+<button (click)="welcome()"> Hola </button>
 <app-title></app-title>
+
+<!-- Comunicación entre componentes -->
+<!-- Input
+Output -->
+<my-item [phones]="phoneList"></my-item>

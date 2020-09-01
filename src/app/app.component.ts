@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   name:string = "Fernando";
-
+  phoneList = [ 'Sansumg', 'iPhone', 'Motorolla', 'LG' ];
   welcome() {
     // alert("Hola "+this.name+", como estas?");
     alert(`Hola ${this.name} como estas?`)
   }
-
 }
