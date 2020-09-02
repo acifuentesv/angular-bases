@@ -6,4 +6,7 @@
 <!-- Comunicación entre componentes -->
 <!-- Input
 Output -->
-<my-item [phones]="phoneList"></my-item>
+<my-item [phones]="phoneList" (selected)="recieveData($event)" ></my-item>
+
+<p>Mi telefono seleccionado es {{phone}}</p>
+

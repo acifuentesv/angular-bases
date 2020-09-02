@@ -1,3 +1,7 @@
-<div class="phone_item" *ngFor="let phone of phones" >{{phone}}</div>
+<div class="phone_item" *ngFor="let phone of phones" (click)="selected.emit(phone)" >{{phone}}</div>
+
+<!-- div phone1 click emit(phone1)
+div phone2 click emit(phone2)
+div phone3 click emit(phone3) -->
 
 
