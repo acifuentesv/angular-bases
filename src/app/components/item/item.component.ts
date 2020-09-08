@@ -11,11 +11,30 @@ export class ItemComponent implements OnInit {
   @Output() selected = new EventEmitter();
   @Input() phones;
 
+  //forma3
+  @Output() added = new EventEmitter();
+  @Output() removed = new EventEmitter();
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  //forma1
+  sendEvent(Pphone, Pevent){
+    this.selected.emit({ phone:Pphone, event:Pevent });
+  }
 
+  //forma2
+  addItem(phone){
+    this.selected.emit({ phone, event: 'add' });
+  }
+
+  removeItem(phone){
+    this.selected.emit({ phone, event: 'remove'});
+  }
+
+ 
 
 }

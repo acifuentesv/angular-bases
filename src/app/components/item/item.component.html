@@ -1,4 +1,17 @@
-<div class="phone_item" *ngFor="let phone of phones" (click)="selected.emit(phone)" >{{phone}}</div>
+<div class="phone_item" *ngFor="let phone of phones">
+    <p>{{phone}}</p>
+
+    <button (click)="sendEvent(phone, 'add')" >+</button>
+    <button (click)="sendEvent(phone, 'remove')" >-</button>
+
+    <!-- <button (click)="addItem(phone)" >+</button>
+    <button (click)="removeItem(phone)" >-</button> -->
+
+    <!-- <button (click)="this.added.emit(phone)" >+</button>
+    <button (click)="this.removed.emit(phone)" >-</button> -->
+    
+</div>
+
 
 <!-- div phone1 click emit(phone1)
 div phone2 click emit(phone2)
