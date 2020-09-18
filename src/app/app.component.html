@@ -1,26 +1,11 @@
-<!-- data binding -->
-<h2>Hola mi nombre es {{name}}</h2> 
-<button (click)="welcome()"> Hola </button>
-<app-title></app-title>
-
-<!-- Comunicación entre componentes -->
-<!-- Input
-Output -->
-<!-- <my-item [phones]="phoneList" (added)="add($event)" (removed)="remove($event)" ></my-item> -->
-<my-item [phones]="phoneList" (selected)="recieveData($event)"></my-item>
+<app-nav></app-nav>
+<!-- ejercicio
+colocar la navegación en la parde izquierda
+Agregar otra ruta llamada perfil
+agregar un icono al nombre de ruta -->
+<router-outlet></router-outlet>
 
 
-<p>Mi telefono seleccionado es {{phone}} - {{count}}</p>
-
-<!-- Ejercicio -->
-<!-- Crear proyecto nuevo que llame ShoppingCart
-Listado de productos con dos botones (-) (+)
-Click a un elemento
-
-Tu producto seleccionado es: Nombre del producto
-Cantidad: 0
-
-alert(debes agregar al menos un elemento) -->
 
 
 
