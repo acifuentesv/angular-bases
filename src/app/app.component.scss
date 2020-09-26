@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+
+  nav {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  main {
+    width: 80vw;
+    background: #f4f4f4;
+    padding: 16px;
+  }
+}
